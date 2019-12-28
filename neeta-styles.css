@@ -37,3 +37,12 @@ a:hover {
 a:active {
   text-decoration: none;
 }
+.blinking{
+    animation:blinkingText 2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #21A82B;    }
+    33%{    color: #3249DC;    }
+    66%{    color: #D432DC;    }
+    100%{   color: #21A82B;    }
+}
