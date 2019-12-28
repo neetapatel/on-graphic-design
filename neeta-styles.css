@@ -1,0 +1,39 @@
+body {
+  background-color: #fffc9c;
+  margin: 1em;
+}
+
+p {
+  margin: 0.25em;
+}
+
+.season-1 p {
+  color: #3249DC;
+}
+
+.season-2 p {
+  color: #D432DC;
+}
+
+.season-3 p {
+  color: #21A82B;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fffc9c;
+}
+
+a:active {
+  text-decoration: none;
+}
