@@ -20,6 +20,10 @@ p {
   color: #21A82B;
 }
 
+.season-4 p {
+  color: yellow;
+}
+
 a:link {
   text-decoration: none;
   color: inherit;
@@ -43,7 +47,8 @@ a:active {
 }
 @keyframes blinkingText{
     0%{     color: #21A82B;    }
-    33%{    color: #3249DC;    }
-    66%{    color: #D432DC;    }
-    100%{   color: #21A82B;    }
+    25%{    color: #3249DC;    }
+    50%{    color: #D432DC;    }
+    75%{    color: #21A82B;    }
+    100%{   color: yellow;    }
 }
