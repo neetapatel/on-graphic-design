@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: 'Bitter', serif;
+  /*text-transform: lowercase;*/
+}
+
+div {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+#season-1 {
+  color: #3249DC;
+}
+
+#season-1 .entry {
+  border-bottom: 1px solid #3249DC;
+  transition: all 0.25s ease;
+}
+
+#season-2 {
+  color: #D432DC;
+}
+
+#season-2 .entry {
+  border-bottom: 1px solid #D432DC;
+  transition: all 0.25s ease;
+}
+
+#season-3 {
+  color: #21A82B;
+}
+
+#season-3 .entry {
+  border-bottom: 1px solid #21A82B;
+  transition: all 0.25s ease;
+}
+
+#season-4 {
+  color: yellow;
+}
+
+#season-4 .entry {
+  border-bottom: 1px solid yellow;
+  transition: all 0.25s ease;
+}
+
+#next-meeting {
+  color: black;
+  background-color: white;
+}
+
+#next-meeting .entry {
+  border-bottom: 1px solid black;
+  transition: all 0.25s ease;
+}
+
+/*section a:first-of-type .entry:hover {
+}
+
+section a:nth-last-of-type(1) {
+  color: red;
+}*/
+
+.blinking{
+  animation:blinkingText 2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #3249DC;    }
+    25%{    color: #D432DC;    }
+    50%{    color: #21A82B;    }
+    75%{    color: yellow;    }
+    100%{   color: #3249DC;    }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+#next-meeting a:hover {
+  color: yellow;
+}
+
+a:hover .entry  {
+  color: black;
+}
+
+#next-meeting .entry:hover {
+  background-color: black;
+  color: yellow;
+}
+
+#season-4 .entry:hover {
+  background-color: yellow;
+}
+
+#season-3 .entry:hover {
+  background-color: #21A82B;
+}
+
+#season-2 .entry:hover {
+  background-color: #D432DC;
+}
+
+#season-1 .entry:hover {
+  background-color: #3249DC;
+}
+
+.entry {
+  width: 100%;
+  font-size: 0;
+}
+
+.author {
+  font-size: 18px;
+  width: 30%;
+}
+
+.author > p {
+  padding: 20px;
+}
+
+.title {
+  font-size: 18px;
+  width: 50%;
+}
+
+.title > p {
+  padding: 20px;
+}
+
+.year {
+  font-size: 18px;
+  width: 20%;
+  text-align: right;
+}
+
+.year > p {
+  padding: 20px;
+}
+
+@media screen and (max-width: 730px) {
+
+  div .year {
+    display: none;
+  }
+
+  div .author {
+    width: 100%;
+    display: block;
+  }
+
+  div .title {
+    width: 100%;
+    display: block;
+  }
+
+  .author > p {
+    padding-bottom: 2px;
+  }
+
+  .title > p {
+    padding-top: 2px;
+  }
+
+  .title, .author {
+    font-size: 16px;
+  }
+
+  #next-meeting .author {
+    display: none;
+  }
+
+  #next-meeting .title {
+    padding-top: 20px;
+  }
+
+}
