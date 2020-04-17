@@ -31,7 +31,7 @@ p {
 }
 
 #season-1 .entry {
-  border-top: 1px solid #3249DC;
+  border-bottom: 1px solid #3249DC;
   transition: all 0.5s ease;
 }
 
@@ -40,7 +40,7 @@ p {
 }
 
 #season-2 .entry {
-  border-top: 1px solid #D432DC;
+  border-bottom: 1px solid #D432DC;
   transition: all 0.25s ease;
 }
 
@@ -49,7 +49,7 @@ p {
 }
 
 #season-3 .entry {
-  border-top: 1px solid #21A82B;
+  border-bottom: 1px solid #21A82B;
   transition: all 0.25s ease;
 }
 
@@ -58,7 +58,7 @@ p {
 }
 
 #season-4 .entry {
-  border-top: 1px solid yellow;
+  border-bottom: 1px solid yellow;
   transition: all 0.25s ease;
 }
 
@@ -68,7 +68,7 @@ p {
 }
 
 #next-meeting .entry {
-  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   transition: all 0.25s ease;
 }
 
@@ -147,6 +147,18 @@ a:hover .entry  {
   text-align: right;
 }
 
+#next-meeting > .entry {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+#next-meeting > .entry:hover {
+  background-color: white;
+  cursor: none;
+}
+
 .year > p {
   padding: 20px;
 }
@@ -175,15 +187,11 @@ a:hover .entry  {
     padding-top: 2px;
   }
 
-  .title, .author {
-    font-size: 16px;
-  }
-
-  #next-meeting .author {
+  #next-meeting .tagline {
     display: none;
   }
 
-  #next-meeting .title {
+  #next-meeting > .entry {
     padding-top: 20px;
   }
 
