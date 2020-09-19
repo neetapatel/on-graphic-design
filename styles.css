@@ -62,6 +62,15 @@ p {
   transition: all 0.25s ease;
 }
 
+#season-5 {
+  color: orange;
+}
+
+#season-5 .entry {
+  border-bottom: 1px solid orange;
+  transition: all 0.25s ease;
+}
+
 #next-meeting {
   color: black;
   background-color: white;
@@ -77,9 +86,10 @@ p {
 }
 @keyframes blinkingText{
     0%{     color: #3249DC;    }
-    25%{    color: #D432DC;    }
-    50%{    color: #21A82B;    }
-    75%{    color: yellow;    }
+    20%{    color: #D432DC;    }
+    40%{    color: #21A82B;    }
+    60%{    color: yellow;    }
+    80%{    color: orange;    }
     100%{   color: #3249DC;    }
 }
 
@@ -90,7 +100,7 @@ a {
 }
 
 #next-meeting a:hover {
-  color: yellow;
+  color: orange;
 }
 
 a:hover .entry  {
@@ -99,7 +109,11 @@ a:hover .entry  {
 
 #next-meeting .entry:hover {
   background-color: black;
-  color: yellow;
+  color: orange;
+}
+
+#season-5 .entry:hover {
+  background-color: orange;
 }
 
 #season-4 .entry:hover {
